@@ -1,0 +1,35 @@
+<div class="txt-14">
+  <!-- profile start -->
+  <v-card class="pd-10 mg-b10">
+    <span class="block center txt-20">My Profile</span>
+    <!-- v-avatar start -->
+    <v-row justify="space-around">
+      <v-avatar color="orange" size="120" class="mg-10 mg-b10">
+        <img
+          src="https://cdn.vuetifyjs.com/images/john.jpg"
+          alt="John"
+        >
+      </v-avatar>
+    </v-row>
+    <!-- v-avatar end -->
+    <v-divider class="mg-b10"></v-divider>
+    <div v-for="(info, index) in myInfo" class="line-18" :class="{'mg-b10' : index === 2}">
+      <v-icon style="font-size: 1.8rem" class="mg-r5">{{ info.icon }}</v-icon>
+      <span>{{ info.info }}</span>
+    </div>
+  </v-card>
+  <!-- profile end -->
+  <v-expansion-panels accordion hover focusable class="mg-b10">
+    <v-expansion-panel
+      v-for="accordion in myAccordion"
+    >
+      <v-expansion-panel-header>
+        <v-icon style="font-size: 1.8rem">{{ accordion.icon }}</v-icon>
+        <span class="txt-14">{{ accordion.title }}</span>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content class="pd-t10">
+        {{ accordion.content }}
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
+</div>

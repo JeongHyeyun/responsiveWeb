@@ -1,34 +1,10 @@
 <template>
   <div id="wrap">
-    <gnb />
-    <div id="main">
+    <gnb class="mg-b10"/>
+    <div id="main" class="pd-10">
       <!-- first start -->
       <div class="first">
-        <v-card>
-          <v-row justify="space-around">
-            <v-avatar color="orange" size="120">
-              <img
-                src="https://cdn.vuetifyjs.com/images/john.jpg"
-                alt="John"
-              >
-            </v-avatar>
-          </v-row>
-          <v-divider class="mx-4"></v-divider>
-          1<br>
-          2<br>
-          3<br>
-        </v-card>
-        <v-expansion-panels accordion>
-          <v-expansion-panel
-            v-for="(item,i) in 3"
-            :key="i"
-          >
-            <v-expansion-panel-header>Item</v-expansion-panel-header>
-            <v-expansion-panel-content>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
+        <first />
       </div>
       <!-- second start  -->
       <div class="second"></div>
@@ -40,9 +16,10 @@
 
 <script>
 import gnb from './gnb/index';
+import first from './first/index';
 
 export default {
-  components: { gnb }
+  components: { gnb, first }
 }
 </script>
 <style lang="scss" scoped>
@@ -54,12 +31,10 @@ export default {
   max-width: 1368px;
   margin: auto;
   height: 1000px;
-  background-color: red;
   display: flex;
   .first {
     width: 25%;
-    height: 1000px;
-    background-color: green;
+    padding-right: 10px;
   }
   .second {
     width: 58%;
