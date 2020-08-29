@@ -7,7 +7,9 @@
         <first />
       </div>
       <!-- second start  -->
-      <div class="second"></div>
+      <div class="second">
+        <second />
+      </div>
       <!-- third start -->
       <div class="third"></div>
     </div>
@@ -17,9 +19,10 @@
 <script>
 import gnb from './gnb/index';
 import first from './first/index';
+import second from './second/index';
 
 export default {
-  components: { gnb, first }
+  components: { gnb, first, second }
 }
 </script>
 <style lang="scss" scoped>
@@ -38,8 +41,6 @@ export default {
   }
   .second {
     width: 58%;
-    height: 1000px;
-    background-color: black;
     padding: 16px;
   }
   .third {

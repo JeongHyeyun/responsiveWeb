@@ -4,14 +4,22 @@ html, body {
   font-size: 10px;
 }
 .block { display: block; }
+.inline { display: inline-block; }
+.flex { display: flex; }
+.spa-b { justify-content: space-between; }
 .center { text-align: center; }
 .pd-10 { padding: 10px; }
 .pd-t10 { padding-top: 10px; }
 .mg-10 { margin: 10px; }
 .mg-20 { margin: 20px; }
-.mg-b10 { margin-bottom: 20px; }
+.mg-t10 { margin-top: 10px; }
+.mg-l5 { margin-left: 5px; }
+.mg-l10 { margin-left: 10px; }
+.mg-b5 { margin-bottom: 5px; }
+.mg-b10 { margin-bottom: 10px; }
 .mg-r5 { margin-right: 5px; }
 .mg-r10 { margin-right: 10px; }
+.bold { font-weight: bold; }
 .txt-11 { font-size: 1.1rem; }
 .txt-12 { font-size: 1.2rem; }
 .txt-13 { font-size: 1.3rem; }

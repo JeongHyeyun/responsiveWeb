@@ -2,9 +2,6 @@
   <v-app>
     <v-main>
       <layout/>
-      <v-avatar color="orange" size="62">
-    <span class="white--text headline">62</span>
-  </v-avatar>
     </v-main>
   </v-app>
 </template>
