@@ -1,0 +1,39 @@
+<div class="txt-14">
+  <!-- Share your Day! start -->
+  <v-card class="mg-b10 pd-10">
+    <span class="bold txt-18 block mg-b10">Share your Day!</span>
+    <v-text-field
+      outlined
+      placeholder="How are you feeling Today?"
+      autofocus
+      dense
+      hideDetails
+      v-model="postContent"
+    ></v-text-field>
+    <v-btn color="primary" class="mg-t10 txt-14" @click="addPost">
+      <v-icon>create</v-icon>post
+    </v-btn>
+  </v-card>
+  <!-- Share your Day! end -->
+  <!-- posts start -->
+  <v-card class="mg-b10 pd-10" v-for="(post, index) in posts">
+  <div class="flex spa-b">
+    <div>
+      <v-row justify="space-around" class="mg-l5">
+        <v-avatar size="50" class="mg-r10">
+          <img
+            :src="`${post.image}`"
+            :alt="`${post.alt}`"
+          >
+        </v-avatar>
+        <span class="bold txt-15 inline mg-t10">{{post.name}}</span>
+      </v-row>
+    </div>
+    <span class="txt-12 mg-t10"><v-icon style="font-size: 1.5rem">thumb_up</v-icon> {{post.like}}</span>
+  </div>
+  <v-divider class="mg-b10 mg-t10"></v-divider>
+    <div class="mg-b10">{{post.content}}</div>
+    <v-btn color="primary" @click="addLike(index)"><v-icon style="font-size: 1.5rem" class="mg-r5">thumb_up</v-icon>like</v-btn>
+  </v-card>
+  <!-- posts end -->
+</div>
