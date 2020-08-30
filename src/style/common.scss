@@ -3,23 +3,35 @@ html, body {
   padding: 0;
   font-size: 10px;
 }
+// display
 .block { display: block; }
 .inline { display: inline-block; }
 .flex { display: flex; }
 .spa-b { justify-content: space-between; }
-.center { text-align: center; }
+
+// padding
 .pd-10 { padding: 10px; }
+// padding-top
 .pd-t10 { padding-top: 10px; }
+// margin
 .mg-10 { margin: 10px; }
 .mg-20 { margin: 20px; }
+// margin-top
 .mg-t10 { margin-top: 10px; }
+// margin-left
 .mg-l5 { margin-left: 5px; }
 .mg-l10 { margin-left: 10px; }
+// margin-bottom
 .mg-b5 { margin-bottom: 5px; }
 .mg-b10 { margin-bottom: 10px; }
+// margin-right
 .mg-r5 { margin-right: 5px; }
 .mg-r10 { margin-right: 10px; }
+// text-align
+.center { text-align: center; }
+// text-bold
 .bold { font-weight: bold; }
+// text-size
 .txt-11 { font-size: 1.1rem; }
 .txt-12 { font-size: 1.2rem; }
 .txt-13 { font-size: 1.3rem; }
@@ -30,4 +42,6 @@ html, body {
 .txt-18 { font-size: 1.8rem; }
 .txt-19 { font-size: 1.9rem; }
 .txt-20 { font-size: 2rem; }
+// text-line
 .line-18 { line-height: 180%; }
+.line-20 { line-height: 200%; }

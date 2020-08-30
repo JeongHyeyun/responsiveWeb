@@ -1,6 +1,6 @@
 <template>
   <div id="wrap">
-    <gnb class="mg-b10"/>
+    <gnb />
     <div id="main" class="pd-10">
       <!-- first start -->
       <div class="first">
@@ -11,7 +11,9 @@
         <second />
       </div>
       <!-- third start -->
-      <div class="third"></div>
+      <div class="third">
+        <third />
+      </div>
     </div>
   </div>
 </template>
@@ -20,9 +22,10 @@
 import gnb from './gnb/index';
 import first from './first/index';
 import second from './second/index';
+import third from './third/index';
 
 export default {
-  components: { gnb, first, second }
+  components: { gnb, first, second, third }
 }
 </script>
 <style lang="scss" scoped>
@@ -31,9 +34,9 @@ export default {
 }
 #main {
   width: 100%;
+  min-width: 360px;
   max-width: 1368px;
   margin: auto;
-  height: 1000px;
   display: flex;
   .first {
     width: 25%;
@@ -41,12 +44,10 @@ export default {
   }
   .second {
     width: 58%;
-    padding: 16px;
+    padding-right: 10px;
   }
   .third {
     width: 17%;
-    height: 1000px;
-    background-color: blue;
   }
 }
 @media (max-width: 768px) {
@@ -54,9 +55,11 @@ export default {
     display: block;
     .first {
       width: 100%;
+      padding: 0;
     }
     .second {
       width: 100%;
+      padding: 0;
     }
     .third {
       width: 100%;
